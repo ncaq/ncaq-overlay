@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>ncaq-overlay</name>
+    <description>ncaq's personal gentoo overlay</description>
+    <homepage>https://github.com/ncaq/ncaq-overlay</homepage>
+    <owner>
+      <email>ncaq@ncaq.net</email>
+    </owner>
+    <source type="git">https://github.com/ncaq/ncaq-overlay.git</source>
+  </repo>
+</repositories>
