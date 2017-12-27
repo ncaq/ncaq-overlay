@@ -6,7 +6,6 @@ DESCRIPTION="japanese font for programming. use Inconsolata and Migu 1M."
 HOMEPAGE="http://www.rs.tus.ac.jp/yyusa/ricty.html"
 SRC_URI="
 http://www.rs.tus.ac.jp/yyusa/ricty/ricty_generator.sh -> ricty_generator.sh
-http://www.rs.tus.ac.jp/yyusa/ricty/regular2oblique_converter.pe -> regular2oblique_converter.pe
 http://www.rs.tus.ac.jp/yyusa/ricty/os2version_reviser.sh -> os2version_reviser.sh
 "
 
@@ -18,7 +17,6 @@ disable-fullwidth-ambiguous-charactors
 disable-scaling-down-migu-1m
 disable-visible-zenkaku-space
 discord
-oblique
 widen-line-space
 widen-line-space-extremely
 "
@@ -51,14 +49,6 @@ src_compile() {
 		 "${EPREFIX}/usr/share/fonts/mix-mplus-ipa/migu-1m-regular.ttf"\
 		 "${EPREFIX}/usr/share/fonts/mix-mplus-ipa/migu-1m-bold.ttf"||\
 		die
-
-	if use oblique; then
-		if use discord; then
-			fontforge -script regular2oblique_converter.pe Ricty*.ttf || die
-		else
-			fontforge -script regular2oblique_converter.pe Ricty-*.ttf || die
-		fi
-	fi
 }
 
 src_install() {
