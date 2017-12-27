@@ -28,6 +28,8 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
+RESTRICT="mirror"
+
 src_unpack() {
 	mkdir $S
 	for a in ${A} ; do
