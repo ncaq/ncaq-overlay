@@ -1,0 +1,3 @@
+#!/bin/bash
+EPREFIX=${0%/usr/bin/mikutter}
+DISABLE_BUNDLER_SETUP= $EPREFIX/usr/bin/ruby23 $EPREFIX/usr/share/mikutter/mikutter.rb $*
