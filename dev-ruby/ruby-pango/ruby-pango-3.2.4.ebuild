@@ -14,8 +14,10 @@ DEPEND+=">=x11-libs/pango-1.2.1"
 RDEPEND+=">=x11-libs/pango-1.2.1"
 
 ruby_add_rdepend "
->=dev-ruby/ruby-glib2-${PV}
 >=dev-ruby/rcairo-1.14.0
+>=dev-ruby/ruby-cairo-gobject-${PV}
+>=dev-ruby/ruby-glib2-${PV}
+>=dev-ruby/ruby-gobject-introspection-${PV}
 "
 ruby_add_bdepend ">=dev-ruby/rcairo-1.14.0"
 
