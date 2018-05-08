@@ -47,7 +47,7 @@ dev-ruby/nokogiri
 dev-ruby/totoridipjp
 "
 
-RUBY_PATCHES=( consumer-override.patch )
+PATCHES=( "${FILESDIR}/consumer-override.patch" )
 
 each_ruby_install() {
 	exeinto /usr/share/mikutter
