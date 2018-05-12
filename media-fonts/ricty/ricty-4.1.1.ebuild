@@ -4,10 +4,7 @@ EAPI=6
 
 DESCRIPTION="japanese font for programming. use Inconsolata and Migu 1M."
 HOMEPAGE="http://www.rs.tus.ac.jp/yyusa/ricty.html"
-SRC_URI="
-http://www.rs.tus.ac.jp/yyusa/ricty/ricty_generator.sh -> ricty_generator.sh
-http://www.rs.tus.ac.jp/yyusa/ricty/os2version_reviser.sh -> os2version_reviser.sh
-"
+SRC_URI="http://www.rs.tus.ac.jp/yyusa/ricty/ricty_generator-${PV}.sh"
 
 LICENSE="OFL IPAfont"
 SLOT="0"
@@ -26,7 +23,6 @@ DEPEND="
 >=media-fonts/mix-mplus-ipa-20130617
 >=media-gfx/fontforge-20150612-r1
 "
-RDEPEND="${DEPEND}"
 
 RESTRICT="mirror"
 
@@ -45,12 +41,12 @@ src_compile() {
 	use disable-fullwidth-ambiguous-charactors && generator_args+=("-a")
 	use disable-scaling-down-migu-1m           && generator_args+=("-s")
 
-	bash ricty_generator.sh -v $generator_args\
-		 "${EPREFIX}/usr/share/fonts/inconsolata/Inconsolata-Regular.ttf"\
-		 "${EPREFIX}/usr/share/fonts/inconsolata/Inconsolata-Bold.ttf"\
-		 "${EPREFIX}/usr/share/fonts/mix-mplus-ipa/migu-1m-regular.ttf"\
-		 "${EPREFIX}/usr/share/fonts/mix-mplus-ipa/migu-1m-bold.ttf"||\
-		die
+	cp "${EPREFIX}/usr/share/fonts/inconsolata/Inconsolata-Regular.ttf" . || die
+	cp "${EPREFIX}/usr/share/fonts/inconsolata/Inconsolata-Bold.ttf" . || die
+	cp "${EPREFIX}/usr/share/fonts/mix-mplus-ipa/migu-1m-regular.ttf" . || die
+	cp "${EPREFIX}/usr/share/fonts/mix-mplus-ipa/migu-1m-bold.ttf" . || die
+
+	bash "ricty_generator-${PV}.sh" -v $generator_args auto || die
 }
 
 src_install() {
