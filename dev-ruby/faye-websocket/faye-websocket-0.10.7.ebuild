@@ -7,7 +7,7 @@ USE_RUBY="ruby22 ruby23"
 inherit ruby-fakegem
 
 DESCRIPTION="Standards-compliant WebSocket server and client"
-HOMEPAGE="https://rubygems.org/gems/faye-websocket/versions/0.10.4"
+HOMEPAGE="https://rubygems.org/gems/faye-websocket"
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
 

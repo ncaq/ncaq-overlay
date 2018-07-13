@@ -14,7 +14,7 @@ RUBY_FAKEGEM_NAME="atk"
 inherit ruby-fakegem
 
 DESCRIPTION="Ruby/ATK is a Ruby binding of ATK-1.0.x."
-HOMEPAGE="https://rubygems.org/gems/atk/versions/3.0.7"
+HOMEPAGE="https://rubygems.org/gems/atk"
 
 DEPEND+="dev-libs/atk"
 RDEPEND+="dev-libs/atk"
