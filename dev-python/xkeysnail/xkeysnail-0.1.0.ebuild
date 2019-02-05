@@ -16,6 +16,7 @@ LICENSE="GPL"
 SLOT="0"
 
 RDEPEND="
+dev-python/inotify_simple
 dev-python/python-evdev
 dev-python/python-xlib
 "
