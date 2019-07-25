@@ -75,8 +75,7 @@ each_ruby_install() {
 	doins -r mikutter/core
 	doins -r mikutter/data
 	doins mikutter/*
-	sed -e 's/\/usr\/bin\/ruby/\/usr\/bin\/ruby24/' "${FILESDIR}"/mikutter |
-		newbin - mikutter
+	newbin "${FILESDIR}"/mikutter mikutter
 	dodoc mikutter/README
 	make_desktop_entry mikutter Mikutter /usr/share/mikutter/core/skin/data/icon.png
 }
