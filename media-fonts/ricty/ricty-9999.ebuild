@@ -3,8 +3,8 @@
 EAPI=6
 
 DESCRIPTION="japanese font for programming. use Inconsolata and Migu 1M."
-HOMEPAGE="http://www.rs.tus.ac.jp/yyusa/ricty.html"
-SRC_URI="http://www.rs.tus.ac.jp/yyusa/ricty/ricty_generator-${PV}.sh"
+HOMEPAGE="https://rictyfonts.github.io/"
+SRC_URI="https://rictyfonts.github.io/files/ricty_generator.sh"
 
 LICENSE="OFL IPAfont"
 SLOT="0"
@@ -46,7 +46,7 @@ src_compile() {
 	cp "${EPREFIX}/usr/share/fonts/mix-mplus-ipa/migu-1m-regular.ttf" . || die
 	cp "${EPREFIX}/usr/share/fonts/mix-mplus-ipa/migu-1m-bold.ttf" . || die
 
-	bash "ricty_generator-${PV}.sh" -v $generator_args auto || die
+	bash "ricty_generator.sh" -v $generator_args auto || die
 }
 
 src_install() {
