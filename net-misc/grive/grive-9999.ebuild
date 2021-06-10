@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 # from [net-misc/grive – Gentoo Packages](https://packages.gentoo.org/packages/net-misc/grive)
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -24,7 +24,7 @@ HOMEPAGE="https://github.com/vitalif/grive2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 -x86-fbsd ~amd64-linux ~x86-linux ~m68k-mint"
-IUSE="systemd zsh-completion"
+IUSE="zsh-completion"
 
 RDEPEND="
 dev-libs/boost
@@ -41,9 +41,6 @@ DEPEND="${RDEPEND}"
 
 src_install() {
 	cmake-utils_src_install
-	if use systemd ; then
-		systemd_douserunit systemd/*
-	fi
 	if use zsh-completion ; then
 		insinto /usr/share/zsh/site-functions
 		newins completion.zsh _grive
