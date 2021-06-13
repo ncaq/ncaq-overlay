@@ -32,10 +32,10 @@ dev-libs/expat
 dev-libs/json-c
 dev-libs/libgcrypt
 dev-libs/yajl
+sys-fs/inotify-tools
 sys-libs/binutils-libs
 sys-libs/glibc
 || ( net-misc/curl[curl_ssl_openssl] net-misc/curl[curl_ssl_gnutls] )
-systemd? ( sys-fs/inotify-tools sys-apps/systemd )
 "
 DEPEND="${RDEPEND}"
 
