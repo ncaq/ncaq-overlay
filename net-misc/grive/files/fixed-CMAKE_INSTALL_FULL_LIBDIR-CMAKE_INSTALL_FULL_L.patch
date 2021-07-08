@@ -1,0 +1,24 @@
+From 0ae76cfbc9ccb6b4f2dbe85f949e52f9745c88e0 Mon Sep 17 00:00:00 2001
+From: ncaq <ncaq@ncaq.net>
+Date: Thu, 8 Jul 2021 14:37:13 +0900
+Subject: [PATCH] fixed: CMAKE_INSTALL_FULL_LIBDIR ->
+ CMAKE_INSTALL_FULL_LIBEXECDIR
+
+---
+ systemd/CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/systemd/CMakeLists.txt b/systemd/CMakeLists.txt
+index 6de3e45..36d6d22 100644
+--- a/systemd/CMakeLists.txt
++++ b/systemd/CMakeLists.txt
+@@ -23,5 +23,5 @@ install(
+   PROGRAMS
+     grive-sync.sh
+   DESTINATION
+-    ${CMAKE_INSTALL_FULL_LIBDIR}/grive
++    ${CMAKE_INSTALL_FULL_LIBEXECDIR}/grive
+ )
+-- 
+2.32.0
+
