@@ -39,8 +39,6 @@ sys-libs/glibc
 "
 DEPEND="${RDEPEND}"
 
-PATCHES=("${FILESDIR}"/fixed-CMAKE_INSTALL_FULL_LIBDIR-CMAKE_INSTALL_FULL_L.patch)
-
 src_install() {
 	cmake-utils_src_install
 	if use zsh-completion ; then
