@@ -4,13 +4,12 @@ ncaq's personal gentoo overlay
 
 # how to install
 
-~~~
-layman -o https://raw.githubusercontent.com/ncaq/ncaq-overlay/master/repositories.xml -f -a ncaq-overlay
+~~~console
+sudo eselect repository add ncaq-overlay git https://github.com/ncaq/ncaq-overlay.git
 ~~~
 
-# if trouble
+or
 
-~~~
-layman -o https://raw.githubusercontent.com/ncaq/ncaq-overlay/master/repositories.xml -f -d ncaq-overlay
-layman -o https://raw.githubusercontent.com/ncaq/ncaq-overlay/master/repositories.xml -f -a ncaq-overlay
+~~~console
+sudo layman -o https://raw.githubusercontent.com/ncaq/ncaq-overlay/master/repositories.xml -f -a ncaq-overlay
 ~~~
