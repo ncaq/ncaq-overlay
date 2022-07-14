@@ -16,6 +16,7 @@ LICENSE="BSD"
 SLOT="0"
 
 BDEPEND="
+dev-python/attrs
 dev-python/six
 "
 
