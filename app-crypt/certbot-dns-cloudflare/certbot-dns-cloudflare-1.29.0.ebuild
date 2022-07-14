@@ -16,8 +16,8 @@ LICENSE="Apache-2.0"
 SLOT="0"
 
 BDEPEND="
-app-crypt/acme
-app-crypt/certbot
+>=app-crypt/acme-${PV}[${PYTHON_USEDEP}]
+>=app-crypt/certbot-${PV}[${PYTHON_USEDEP}]
 dev-python/cloudflare
 dev-python/zope-interface
 "
