@@ -1,0 +1,9 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=HackGen is Japanese programming font which is a composed of Hack and GenJyuu-Gothic.
+EAPI=7
+HOMEPAGE=https://github.com/yuru7/HackGen
+KEYWORDS=~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE=OFL-1.1
+SLOT=0
+SRC_URI=https://github.com/yuru7/HackGen/releases/download/v2.7.0/HackGen_v2.7.0.zip https://github.com/yuru7/HackGen/releases/download/v2.7.0/HackGen_NF_v2.7.0.zip
+_md5_=474d1d2ec4fcb79a9fa26efdf428c0a5

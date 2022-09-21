@@ -1,0 +1,13 @@
+DEFINED_PHASES=unpack
+DEPEND=x11-libs/vte:0 dev-libs/glib dev-util/intltool sys-devel/gettext virtual/pkgconfig x11-libs/gtk+:2 >=dev-vcs/git-1.8.2.1[curl]
+DESCRIPTION=a terminal emulator based off of libvte that aims to be fast and lightweight
+EAPI=6
+HOMEPAGE=https://lilyterm.luna.com.tw
+INHERIT=git-r3
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=x11-libs/vte:0
+SLOT=0
+_eclasses_=git-r3	b9ac6f96d2a88edb5b351df634dc5e53
+_md5_=e16f2518579264d4d77168716cbfec14

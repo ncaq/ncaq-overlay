@@ -1,0 +1,16 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=test? ( ) test? ( )
+DESCRIPTION=Automatic Ruby code style checking tool. Aims to enforce the community-driven Ruby Style Guide.
+EAPI=6
+HOMEPAGE=https://rubygems.org/gems/rubocop
+INHERIT=ruby-fakegem
+IUSE=test doc test test
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=
+REQUIRED_USE=|| ( )
+RESTRICT=!test? ( test ) !test? ( test ) !test? ( test )
+SLOT=0
+SRC_URI=https://rubygems.org/gems/rubocop-0.63.0.gem
+_eclasses_=eqawarn	c9847c43b3253a276ae2eabddedab3d7	estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	ruby-utils	97c8e15d89dc6537e36cddedf413ed22	ruby-ng	1147c87e94def682fd485ce7a14a86c2	ruby-fakegem	5219a86777b162618ed386ae08bf8ce4
+_md5_=8ef5724208cf410827980dd93b3e4a56
