@@ -1,26 +1,26 @@
 # Copyright 2020 ncaq
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python{3_6,3_7,3_8,3_9,3_10,3_11} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
 DESCRIPTION="Python wrapper for the Cloudflare v4 API"
-HOMEPAGE="https://pypi.org/project/cloudflare/"
+HOMEPAGE="https://pypi.org/project/${PN}/"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
-KEYWORDS="~amd64 ~arm64 ~x86"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
 
 LICENSE="MIT"
 SLOT="0"
 
 BDEPEND="
-dev-python/beautifulsoup4
-dev-python/future
-dev-python/jsonlines
-dev-python/pyyaml
-dev-python/requests
+dev-python/beautifulsoup4[${PYTHON_USEDEP}]
+dev-python/future[${PYTHON_USEDEP}]
+dev-python/jsonlines[${PYTHON_USEDEP}]
+dev-python/pyyaml[${PYTHON_USEDEP}]
+dev-python/requests[${PYTHON_USEDEP}]
 "
 
 RDEPEND="$BDEPEND"

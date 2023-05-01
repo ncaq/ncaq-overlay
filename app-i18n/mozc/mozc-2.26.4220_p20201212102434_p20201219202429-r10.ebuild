@@ -3,11 +3,11 @@
 # Copyright 2020 ncaq
 # Distributed under the terms of the GNU General Public License v2
 
-# Copyright 2010-2021 Gentoo Authors
+# Copyright 2010-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
-PYTHON_COMPAT=(python{3_7,3_8,3_9})
+EAPI=8
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit elisp-common multiprocessing python-any-r1 toolchain-funcs
 
@@ -29,8 +29,8 @@ else
 	JAPANESE_USAGE_DICTIONARY_GIT_REVISION="a4a66772e33746b91e99caceecced9a28507e925"
 	JAPANESE_USAGE_DICTIONARY_DATE="20180701040110"
 
-	# https://osdn.net/users/utuhiro/pf/utuhiro/files/
-	MOZCDIC_UT_DATE="20210907"
+	# https://osdn.net/users/utuhiro/pf/utuhiro/files
+	MOZCDIC_UT_DATE="20221022"
 fi
 
 DESCRIPTION="Mozc - Japanese input method editor"
