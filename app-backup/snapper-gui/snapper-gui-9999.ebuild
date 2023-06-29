@@ -15,7 +15,7 @@ inherit distutils-r1
 inherit git-r3
 
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~arm64 ~riscv ~x86"
 
 RDEPEND="
 app-backup/snapper
