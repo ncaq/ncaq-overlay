@@ -1,7 +1,7 @@
 # Copyright 2019 ncaq
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 DESCRIPTION="GUI for snapper, a tool for Linux filesystem snapshot management, works with btrfs, ext4 and thin-provisioned LVM volumes"
 HOMEPAGE="https://github.com/ricardomv/snapper-gui"
@@ -9,7 +9,7 @@ LICENSE="GPL-2"
 
 EGIT_REPO_URI="https://github.com/ricardomv/snapper-gui.git"
 
-PYTHON_COMPAT=( python{3_7,3_8,3_9} )
+PYTHON_COMPAT=( python3_{10..12} )
 
 inherit distutils-r1
 inherit git-r3
