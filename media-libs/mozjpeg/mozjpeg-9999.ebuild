@@ -22,7 +22,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 DEPEND="
-dev-util/cmake
+dev-build/cmake
 media-libs/libpng[static-libs]
 sys-libs/zlib[static-libs]
 || ( dev-lang/nasm dev-lang/yasm )
