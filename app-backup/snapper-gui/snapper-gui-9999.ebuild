@@ -9,10 +9,9 @@ LICENSE="GPL-2"
 
 EGIT_REPO_URI="https://github.com/ricardomv/snapper-gui.git"
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..13} )
 
-inherit distutils-r1
-inherit git-r3
+inherit distutils-r1 git-r3
 
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~riscv ~x86"
