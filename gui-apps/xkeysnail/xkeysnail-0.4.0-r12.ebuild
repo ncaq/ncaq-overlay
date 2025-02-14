@@ -17,7 +17,8 @@ SLOT="0"
 
 RDEPEND="
 dev-python/appdirs[${PYTHON_USEDEP}]
-dev-python/evdev[${PYTHON_USEDEP}>=1.8.0<1.9.0]
+>=dev-python/evdev-1.8.0[${PYTHON_USEDEP}]
+<dev-python/evdev-1.9.0[${PYTHON_USEDEP}]
 dev-python/inotify_simple[${PYTHON_USEDEP}]
 dev-python/python-xlib[${PYTHON_USEDEP}]
 "
