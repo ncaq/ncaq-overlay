@@ -21,14 +21,24 @@ LICENSE="BSD IJG"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND="
+BDEPEND="
 dev-build/cmake
 media-libs/libpng[static-libs]
 sys-libs/zlib[static-libs]
 || ( dev-lang/nasm dev-lang/yasm )
 "
 
-RDEPEND="sys-libs/zlib"
+RDEPEND="
+media-libs/libpng
+sys-libs/zlib
+"
+
+src_configure() {
+	local mycmakeargs=(
+		-DBUILD_SHARED_LIBS=0
+	)
+	cmake_src_configure
+}
 
 src_install() {
 	newbin ${BUILD_DIR}/cjpeg-static mozcjpeg
